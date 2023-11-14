@@ -114,6 +114,6 @@ class Text3D:
 
 @app.get("/predict/{prompt}")
 async def root(prompt):
-    model = Text3D(api_key="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")
+    model = Text3D(api_key="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")
     result = model.gen_3d(prompt)
     return {"output_path": result}
